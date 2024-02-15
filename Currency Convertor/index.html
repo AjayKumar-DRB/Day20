@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!--Title-->
+        <h1>Currency Convertor</h1>
+
+        <!-- Container for currency conversion inputs and outputs -->
+        <div class="box">
+            <!-- Left box for input -->
+            <div class="left-box">
+                <select name="currency" class="currency"></select>
+                <!-- Input field for entering currency value -->
+                <input onkeyup="convert()" type="number" name="" id="input">
+            </div>
+            <!-- Right box for output -->
+            <div class="right-box">
+                <!-- Dropdown menu for selecting currency -->
+                <select name="currency" class="currency"></select>
+                <!-- Output field for displaying converted currency value -->
+                <input onkeyup="convert()" type="number" name="" id="result">
+            </div>
+        </div>
+        
+        <!-- Container for alert message -->
+        <div class="alertbox">
+           <p id="alert"></p>
+        </div>
+        
+        
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
